@@ -1,2 +1,4 @@
-package com.kseger.ppmtool.domain;public class Project {
+package com.kseger.ppmtool.domain;
+
+public class Project {
 }
