@@ -1,23 +1,19 @@
 package com.kseger.ppmtool.web;
 
 import com.kseger.ppmtool.domain.Project;
-import com.kseger.ppmtool.exceptions.ProjectIdException;
 import com.kseger.ppmtool.services.MapValidationErrorService;
 import com.kseger.ppmtool.services.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/api/project")
+@CrossOrigin
 public class ProjectController {
 
     @Autowired
